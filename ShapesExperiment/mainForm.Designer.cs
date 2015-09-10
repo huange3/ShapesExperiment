@@ -613,7 +613,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainForm";
             this.Text = "Shapes Experiment";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.mainForm_Load);
             this.GrpSettings.ResumeLayout(false);
             this.GrpSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numObservationsM)).EndInit();

@@ -46,14 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="mainBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainBoard.Designer.cs">
+      <DependentUpon>mainBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mainForm.Designer.cs">
       <DependentUpon>mainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Phase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shape.cs" />
+    <Compile Include="Trial.cs" />
+    <EmbeddedResource Include="mainBoard.resx">
+      <DependentUpon>mainBoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,6 +79,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +93,64 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\blue-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucket_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucket_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucket_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucket_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucket_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucket_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bucket_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray-02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray-03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray-04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray-05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray-06.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
